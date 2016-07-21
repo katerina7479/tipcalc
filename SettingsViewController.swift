@@ -10,10 +10,12 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var defaultTipPercent: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaultTipPercent.selectedSegmentIndex = defaults.integerForKey("defaultTipIndex")
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +24,11 @@ class SettingsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func defaultTipChanged(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setInteger(defaultTipPercent.selectedSegmentIndex, forKey: "defaultTipIndex")
+        defaults.synchronize()
     }
-    */
+
 
 }
