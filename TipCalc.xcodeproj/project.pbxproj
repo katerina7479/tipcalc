@@ -14,6 +14,7 @@
 		01B298051D4039DC00794593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B298031D4039DC00794593 /* LaunchScreen.storyboard */; };
 		01B298101D4039DC00794593 /* TipCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B2980F1D4039DC00794593 /* TipCalcTests.swift */; };
 		01B2981B1D4039DC00794593 /* TipCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B2981A1D4039DC00794593 /* TipCalcUITests.swift */; };
+		01B298291D40530200794593 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B298281D40530200794593 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		01B298161D4039DC00794593 /* TipCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B2981A1D4039DC00794593 /* TipCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalcUITests.swift; sourceTree = "<group>"; };
 		01B2981C1D4039DC00794593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B298281D40530200794593 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		01B297F91D4039DC00794593 /* TipCalc */ = {
 			isa = PBXGroup;
 			children = (
+				01B298281D40530200794593 /* SettingsViewController.swift */,
 				01B297FA1D4039DC00794593 /* AppDelegate.swift */,
 				01B297FC1D4039DC00794593 /* ViewController.swift */,
 				01B297FE1D4039DC00794593 /* Main.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				01B297FD1D4039DC00794593 /* ViewController.swift in Sources */,
 				01B297FB1D4039DC00794593 /* AppDelegate.swift in Sources */,
+				01B298291D40530200794593 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
