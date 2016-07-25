@@ -10,4 +10,6 @@ This is a short demonstration project for CodePath's Swift Bootcamp.
 * The user can change the initially selected default tip
 
 
+## Demo
+![Screenshot Gif](demo.gif?raw=true "Screenshot")
 
